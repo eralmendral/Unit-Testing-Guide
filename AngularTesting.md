@@ -19,4 +19,9 @@
 
  })
  
-```- 
+```
+
+
+### Jasmine Spy
+ - Simulate a function
+
