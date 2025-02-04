@@ -24,4 +24,18 @@
 
 ### Jasmine Spy
  - Simulate a function
+ - Create a mock function instead of creating instance of the service.
 
+
+### Example
+```JavaScript
+  it('should add two numbers', () => {
+ 	const logger = jasmine.spyOn('', ['log'])
+	const calculator = new CalculatorService(logger)
+	const result = calculator.add(1,2);
+	
+	expect(result).toBe(3);
+	expect(logger.log).toHaveBeenCallTimes(1)
+
+ })
+```
