@@ -39,3 +39,13 @@
 
  })
 ```
+
+### Structuring Angular Unit Tests
+ - Test Setup
+ - beforeEach
+
+### Using Dependency Injection
+ - Dependency Injection - design pattern widely used by Angular Framework. Means some components or service might depends from other services.
+- TestBed - provide fake implementations of some of the internal services.
+
+``
