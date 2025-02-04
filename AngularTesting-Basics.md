@@ -45,7 +45,13 @@
  - beforeEach
 
 ### Using Dependency Injection
- - Dependency Injection - design pattern widely used by Angular Framework. Means some components or service might depends from other services.
+- Dependency Injection - design pattern widely used by Angular Framework. Means some components or service might depends from other services.
 - TestBed - provide fake implementations of some of the internal services.
+- It's important all the dependencies.
+- Should not use real instances.
+- Provide test-only implementations like 'jasmine spies'
+- Use only real instance of the Service itself that we are testing, but all the dependencies are mocked.
+- Because we only want to test the service itself, 'UNIT' test.
+- If we use the dependencies real instance then it's no longer a unit test but an Integration Test.
+- Multiple test we write should be isolated from each other.
 
-``
